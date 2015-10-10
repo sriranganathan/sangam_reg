@@ -32,6 +32,7 @@
                         <br>
                         <div class="input-group col-xs-12 col-sm-offset-2 col-sm-8 col-md-offset-4 col-md-4">
                             <span class="input-group-addon" id="password-addon-1">Password</span>
+                            <input type="password" name="password" class="form-control" placeholder="Password" aria-describedby="password-addon-1" required>
                         </div>
                         <br>
                         <div class="input-group col-xs-12 col-sm-offset-2 col-sm-8 col-md-offset-4 col-md-4">
