@@ -13,6 +13,7 @@
         </style>
     </head>
     <body>
+        @include('navbar',['active'=>'register'])
         <div id="content" class="container-fluid">
             <div class="panel panel-success">
                 <div class="panel-heading">Registration Successful</div>
@@ -21,8 +22,9 @@
                 </div>
             </div>
         </div>
+        @include('footer')
         <script type="text/javascript" src="{{asset('JS/jquery.min.js')}}"></script>
         <script type="text/javascript" src="{{asset('JS/bootstrap.js')}}"></script>
-
+        
     </body>
 </html>

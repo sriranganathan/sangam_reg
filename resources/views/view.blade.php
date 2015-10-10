@@ -13,6 +13,7 @@
         </style>
     </head>
     <body>
+        @include('navbar',['active'=>'view'])
         <div id="content" class="container-fluid">
             <div class="panel panel-success">
                 <div class="panel-heading">Registrations Received</div>
@@ -22,6 +23,7 @@
                             <tr>
                                 <th>Registration id</th>
                                 <th>Team Leader (Roll No)</th>
+                                <th>Team Leader (Name)</th>
                                 <th>Team leader (Contact No)</th>
                             </tr>
                         </thead>
@@ -30,6 +32,7 @@
                                 <tr id="{{$registration->id}}">
                                     <td>{{$registration->id}}</td>
                                     <td>{{$registration->roll_number_1}}</td>
+                                    <td>{{$registration->name_1}}</td>
                                     <td>{{$registration->contact_number_1}}</td>
                                 </tr>
                             @endforeach
@@ -39,6 +42,7 @@
                 </div>
             </div>
         </div>
+        @include('footer')
         <script type="text/javascript" src="{{asset('JS/jquery.min.js')}}"></script>
         <script type="text/javascript" src="{{asset('JS/bootstrap.js')}}"></script>
         <script>

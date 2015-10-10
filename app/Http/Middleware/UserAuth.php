@@ -3,7 +3,7 @@
 use Closure;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Redirect;
-class AdminAuth {
+class UserAuth {
 
 	/**
 	 * Handle an incoming request.
@@ -14,13 +14,13 @@ class AdminAuth {
 	 */
 	public function handle($request, Closure $next)
 	{
-		if((Session::has('user_name')))
+		if((Session::has('roll_number')))
 		{
 			return $next($request);
 		}
 		else
 		{
-			return Redirect::to(action("AdminController@login"));
+			return Redirect::to(action("HomeController@login"));
 		}
 	}
 

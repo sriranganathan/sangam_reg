@@ -40,7 +40,7 @@ class AdminController extends Controller
     public function logout()
     {
        Session::flush();
-       return Redirect::to('/view_registration');
+       return Redirect::to(action('HomeController@index'));
     }
 
     public function view()
