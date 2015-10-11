@@ -1,3 +1,10 @@
+<style>
+  .navbar-defualt
+  {
+    background-color: black;
+  }
+</style>
+
 <nav class="navbar navbar-default">
   <div class="container-fluid">
     <div class="navbar-header">

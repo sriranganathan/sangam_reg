@@ -93,8 +93,7 @@ class HomeController extends Controller
             $password=$request->get('password');
             $shellcmd = "python2 nitt_imap_login.py ".$username." ".$password;
             $imap = shell_exec($shellcmd);
-
-            if($imap)
+            if($imap[0])
             {
                 Session::put('roll_number',$username);
                 return Redirect::to(action('HomeController@register'));

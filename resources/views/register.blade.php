@@ -22,8 +22,7 @@
     <body>
         @include('navbar',['active'=>'register'])
         <div id="content" class="container-fluid">
-            <div class="panel panel-default">
-                <div class="panel-body">
+            <div class="well">
                 @if (count($errors) > 0)
                     <div class="alert alert-danger">
                         <ul>
@@ -37,7 +36,7 @@
                         {!! csrf_field() !!}
                         <div class="row">
                             <div class="col-xs-12 col-sm-6 col-lg-3">
-                                <div class="panel panel-info">
+                                <div class="panel panel-primary">
                                     <div class="panel-heading">Details of Member 1 (Team Leader)</div>
                                     <div class="panel-body">
                                         <div class="input-group">
@@ -58,7 +57,7 @@
                                 </div>
                             </div>
                             <div class="col-xs-12 col-sm-6 col-lg-3">
-                                <div class="panel panel-info">
+                                <div class="panel panel-primary">
                                     <div class="panel-heading">Details of Member 2</div>
                                     <div class="panel-body">
                                         <div class="input-group">
@@ -79,7 +78,7 @@
                                 </div>
                             </div>
                             <div class="col-xs-12 col-sm-6 col-lg-3">
-                                <div class="panel panel-info">
+                                <div class="panel panel-primary">
                                     <div class="panel-heading">Details of Member 3</div>
                                     <div class="panel-body">
                                         <div class="input-group">
@@ -100,7 +99,7 @@
                                 </div>
                             </div>
                             <div class="col-xs-12 col-sm-6 col-lg-3">
-                                <div class="panel panel-info">
+                                <div class="panel panel-primary">
                                     <div class="panel-heading">Details of Member 4</div>
                                     <div class="panel-body">
                                         <div class="input-group">
@@ -123,7 +122,7 @@
                         </div>
                         <div class="row">
                             <div class="col-lg-12">
-                                <div class="panel panel-info">
+                                <div class="panel panel-primary">
                                     <div class="panel-heading">Abstract (Max 500 words)</div>
                                     <textarea id="abstract" name="abstract" class="form-control panel-body" rows="5" required>{{old('abstract')}}</textarea>
                                 </div>
@@ -131,7 +130,7 @@
                         </div>
                         <div class="row">
                             <div class="col-xs-12 col-sm-8">
-                                <div class="panel panel-info">
+                                <div class="panel panel-primary">
                                     <div class="panel-heading">File Uploads (If Any)</div>
                                     <input id="file" name="file" type="file" data-show-upload="false"  data-show-preview="false" class="file">
                                 </div>
@@ -141,6 +140,7 @@
                             </div>
                         </div>
                     </form>
+            </div>
         </div>
         @include('footer')
         <script type="text/javascript" src="{{asset('JS/jquery.min.js')}}"></script>
