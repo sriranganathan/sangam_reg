@@ -1,11 +1,11 @@
 <style>
-  .navbar-defualt
-  {
-    background-color: black;
-  }
+#nav_bar
+{
+  border-bottom: #090909 1px solid;
+}
 </style>
 
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default" id="nav_bar">
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
