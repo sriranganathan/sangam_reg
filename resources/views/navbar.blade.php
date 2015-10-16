@@ -1,11 +1,11 @@
 <style>
 #nav_bar
 {
-  border-bottom: #090909 1px solid;
+  border-bottom: #121212 1px solid;
 }
 </style>
 
-<nav class="navbar navbar-default" id="nav_bar">
+<nav class="navbar navbar-default navbar-fixed-top" id="nav_bar">
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -13,7 +13,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span> 
       </button>
-      <a class="navbar-brand" href="{{action('HomeController@index')}}">NIT-Trichy</a>
+      <a class="navbar-brand" href="{{action('HomeController@index')}}">Sangam</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
@@ -33,7 +33,11 @@
     </div>
   </div>
 </nav>
-
+<br>
+<br>
+<br>
+<br>
+<br>
 <script>
 document.getElementById("{{$active}}").className = "active";
 </script>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Pragyan 2016 Sangam Registration</title>
+        <title>Sangam</title>
         <link type="text/css" rel="stylesheet" href="{{asset('CSS/bootstrap.css')}}"  media="screen,projection"/>
         <link type="text/css" rel="stylesheet" href="{{asset('CSS/font-awesome.min.css')}}"  media="screen,projection"/>
         <link type="text/css" rel="stylesheet" href="{{asset('CSS/fileinput.css')}}"  media="screen,projection"/>
