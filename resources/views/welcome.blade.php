@@ -96,7 +96,7 @@
                             <li class="list_item1">Must be presentable during Pragyan as a working model or demonstration along with visual aids (Charts, Visual Aids, etc.)</li>
                             <li class="list_item1">Original ideas addressing social problems, industrial needs, day-to-day utility or recreation.</li>
                         </ul>
-                    <li class="list_item">Register at this portal by <strong class="lead text-danger">November 5th 2015</strong>.</li>
+                    <li class="list_item">Register at this portal by <strong class="lead text-danger">November 25th 2015</strong>.</li>
                     <li class="list_item">A panel will scrutinize the idea, and if deemed feasible and worthy, you will be given the green light to pursue the idea.</li>
                     <li class="list_item">The second round will be held in the month of January 2016 wherein all teams will be required to present a comprehensive proposal, work plan, cost report and justification to an open audience (including the Director and all HoDs)</li>
                     <li class="list_item">After systematic reviews, the complete presentation along with the working model/demonstration must be ready by 20th February 2016, following which it will be showcased during Pragyan’16.</li>
