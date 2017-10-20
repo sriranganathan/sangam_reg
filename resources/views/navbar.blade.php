@@ -3,6 +3,11 @@
 {
   border-bottom: #121212 1px solid;
 }
+
+.clickable
+{
+	cursor: pointer;
+	}
 </style>
 
 <nav class="navbar navbar-default navbar-fixed-top" id="nav_bar">
@@ -13,11 +18,15 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span> 
       </button>
-      <a class="navbar-brand" href="{{action('HomeController@index')}}">Sangam</a>
+      <a class="navbar-brand" style="margin:0;margin-right:15px;padding:0" href="{{action('HomeController@index')}}"><img style="max-width:150px;height:100%" src="{{asset('pragyan.png')}}"/></a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li id="home"><a href="{{action('HomeController@index')}}">Home</a></li> 
+<li class="clickable active" id="home"><a>Home</a></li>
+<li class="clickable" id="how"><a>How Sangam Works</a></li> 
+<li class="clickable" id="rules"><a>Rules</a></li> 
+<li class="clickable" id="contact"><a>Contact</a></li> 
+
         <li id="register"><a href="{{action('HomeController@register')}}">Register</a></li>
         @if(Session::has('user_name'))
           <li id="view"><a href="{{action('AdminController@view')}}">View Registrations</a></li>
@@ -33,11 +42,14 @@
     </div>
   </div>
 </nav>
+
 <br>
 <br>
 <br>
 <br>
 <br>
 <script>
+
 document.getElementById("{{$active}}").className = "active";
+
 </script>

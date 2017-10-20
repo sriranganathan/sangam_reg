@@ -26,7 +26,7 @@
             <div class="panel panel-success">
                 <div class="panel-heading">Registration Successful</div>
                 <div class="panel-body">
-                Your Team has been Successfully Registered for Pragyan 2016 Sangam
+                Your Team has been Successfully Registered for Pragyan 2018 Sangam
                 </div>
             </div>
         </div>

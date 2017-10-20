@@ -14,16 +14,17 @@ class CreateRegistrationsTable extends Migration
     {
        Schema::create('registrations', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('roll_number_1');
+	    $table->string('project_name',255);
+	    $table->enum('project_category',['c','nc'])->default('c');   
+            $table->bigInteger('roll_number_1');
             $table->bigInteger('contact_number_1');
-            $table->integer('roll_number_2');
+            $table->bigInteger('roll_number_2');
             $table->bigInteger('contact_number_2');
-            $table->integer('roll_number_3');
+            $table->bigInteger('roll_number_3');
             $table->bigInteger('contact_number_3');
-            $table->integer('roll_number_4');
+            $table->bigInteger('roll_number_4');
             $table->bigInteger('contact_number_4');
-            $table->string('abstract',2500);
-            $table->string('file_name',40);
+            $table->string('file_name',255);
         });
     }
 

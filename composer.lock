@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "5c6026b96e6fa11a641b51a6ba976f5e",
-    "content-hash": "5bd58fd976f1ee3e9611bc37c006ec46",
+    "hash": "fc3fd7b891faca09f0077e825d3987a5",
+    "content-hash": "1d18138ab776f8e3c4cf9b3a1b73d4e8",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -216,6 +216,46 @@
                 "string"
             ],
             "time": "2014-12-20 21:24:13"
+        },
+        {
+            "name": "gokulsrinivas/sangria",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/GokulSrinivas/Sangria.git",
+                "reference": "e69076655da30ef74b9b6f4a7b7317b3d37d5710"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/GokulSrinivas/Sangria/zipball/e69076655da30ef74b9b6f4a7b7317b3d37d5710",
+                "reference": "e69076655da30ef74b9b6f4a7b7317b3d37d5710",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Sangria": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Gokul Srinivas",
+                    "email": "gokusrinivas@gmail.com"
+                }
+            ],
+            "description": "A collection of useful libraries to make life easier.",
+            "keywords": [
+                "api",
+                "email",
+                "helpers",
+                "imap",
+                "json"
+            ],
+            "time": "2016-08-08 12:28:19"
         },
         {
             "name": "jakub-onderka/php-console-color",
