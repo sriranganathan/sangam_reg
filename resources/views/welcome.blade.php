@@ -114,29 +114,37 @@
 			<li class="list_item">Converting your idea from a pitch into a working prototype.</li><li class="list_item"> Interaction with technocrats from across the country and recognition for your idea. </li>    
                         <li class="list_item">Internship opportunities with the visiting companies.</li>
                         <li class="list_item">Certificates of participation from Pragyan. </li>
-			<li class="list_item">Participation prize up to 20,000 INR for the final shortlisted participants. </li>
+	
                     </ul>
                 </div>
             </div>
-            <div class="col-sm-12 col-md-5 col-md-offset-2">
+            <div class="col-sm-12 col-md-6 col-md-offset-1">
                 <center><h3>Prize Money</h3></center>
                 <div class="row">
 		<div class="col-md-2">
                     <center><i class="fa fa-trophy fa-5x"></i></center>
                 </div>
                 <div class="col-md-10">
-		<h4>For the top three innovations in each category:</h4> 	
-                    <ul>
-                        <li class="list_item">Circuital: 20k/12k/8k.</li>
-                        <li class="list_item">Non-Circuital: 20k/12k/8k.</li>
+		<ul>
+                   <li class="list_item">For the top three innovations in each category:
+			  <ul style="font-size:15px">
+                        <li>Circuital: 20,000/12,000/8,000 INR.</li>
+                        <li>Non-Circuital: 20,000/12,000/8,000 INR.</li>
                     </ul>
+</li>
+<li class="list_item">
+Additionally, for all shortlisted finalists:
+<ul style="font-size:15px">
+<li>Circuital: Prize Money worth up to 30,000 INR</li>
+<li>Non-Circuital: Prize Money worth up to 30,000 INR</li>
+</li>
                 </div>
 		</div>
             </div>
         </div>
         <br>
         <br>
-        <div  id="how_it_works" class="col-sm-12 col-md-10 col-md-offset-1">
+<div class="row" id="how_it_works">        <div class="col-sm-12 col-md-10 col-md-offset-1">
             <center><h3>How Sangam Works?</h3></center>
             <div class="col-sm-12">
                 <ol>
@@ -148,11 +156,11 @@
                             <li class="list_item1">Must be original, and addressing social problems, industrial needs, day-to-day utilities or recreational activities</li>
                         </ul>
                     <li class="list_item">A panel will scrutinize the idea, and if deemed feasible and worthy, you will be given the green light to pursue the idea.</li>
-                    <li class="list_item">The second round will be held in the month of January 2018 wherein all teams will be required to present a comprehensive proposal, work plan, cost report and justification for the project.</li>
+                    <li class="list_item">The second round will be held on 22<sup>nd</sup> January 2018, wherein all teams will be required to present a comprehensive proposal, work plan, cost report and justification for the project.</li>
                     <li class="list_item">After systematic reviews, the complete presentation along with the working model or demonstration must be ready by 24th February 2018, following which it will be showcased during Pragyan '18. </li>
                 </ol>
             </div>
-        </div>
+        </div></div>
         <br>
 	<div class="row" id="rules_block">
 		<div class="col-sm-12 col-md-10 col-md-offset-1">
@@ -170,18 +178,18 @@
 <h3 class="text-warning">First Round:</h3>
 <ol>
 	<li class="list_item1">The deadline for the abstract submission is <span class="text-danger" style="font-size:25px;">20<sup>th</sup> December 2017.</span> Late entries will not be entertained.</li>
-	<li class="list_item1">Maximum number of participants in a Team is 5.</li>
+	<li class="list_item1">Maximum number of participants in a team is 5.</li>
 	<li class="list_item1">A team can present more than one project.</li>
 	<li class="list_item1">One student may be a part of more than one team.</li>
 	<li class="list_item1">The members of a team can not be changed during the course of the competition.</li>
-	<li class="list_item1">The idea and contents of the project may not be changed once the abstract is submitted.</li>
+
 	<li class="list_item1">After you have submitted the abstract, a panel of judges will analyse your proposal and if you are shortlisted for the second round, you will be notified.</li>
 	</ol>
 	<h3 class="text-warning">Second Round:</h3>
 	
                  <ol>
                     
-	<li class="list_item1">A PowerPoint presentation containing a detailed description of the project and the progress of the project and a video (duration 3-5 minutes) explaining the same should be presented in front of panel on 22nd January 2018.</li>
+	<li class="list_item1">A PowerPoint presentation containing a detailed description of the project and the progress of the project and a video (duration 3-5 minutes) explaining the same should be presented in front of panel on <span class="text-danger" style="font-size:25px">22<sup>nd</sup> January 2018</span>.</li>
         <li class="list_item1">The student(s) doing the presentation must be the one(s) who conducted the research.</li>
 	<li class="list_item1">The presentation will be reviewed by a panel of judges and if you are shortlisted for the final round, you will be notified.</li>
  </ol>
@@ -231,7 +239,7 @@
 	$("#home").removeClass("active");
 	$("#contact").removeClass("active");
 	$('html, body').animate({
-	'scrollTop' : $("#rules_block").position().top
+	'scrollTop' : $("#rules_block").position().top-50
 	});
 	});
 	$("#home").on('click',function() {

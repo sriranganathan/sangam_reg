@@ -22,10 +22,7 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-<li class="clickable active" id="home"><a>Home</a></li>
-<li class="clickable" id="how"><a>How Sangam Works</a></li> 
-<li class="clickable" id="rules"><a>Rules</a></li> 
-<li class="clickable" id="contact"><a>Contact</a></li> 
+<li class="clickable" id="home"><a href="{{action('HomeController@index')}}">Home</a></li>
 
         <li id="register"><a href="{{action('HomeController@register')}}">Register</a></li>
         @if(Session::has('user_name'))

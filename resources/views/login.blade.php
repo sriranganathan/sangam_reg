@@ -45,7 +45,7 @@
                         </div>
                         <br>
                         <div class="input-group col-xs-12 col-sm-offset-2 col-sm-8 col-md-offset-4 col-md-4">
-                           <center> <input type="submit" class="btn btn-primary" value="login"> </center>
+                           <center> <input type="submit" class="btn btn-primary" value="Login"> </center>
                         </div>
                     </form>
                 </div>

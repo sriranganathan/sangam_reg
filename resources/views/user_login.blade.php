@@ -35,17 +35,17 @@
                     <form method="post" action="{{action('HomeController@check_login')}}">
                         {!! csrf_field() !!}
                         <div class="input-group col-xs-12 col-sm-offset-2 col-sm-8 col-md-offset-4 col-md-4">
-                            <span class="input-group-addon" id="usename-addon-1">Roll Number</span>
+                            <span class="input-group-addon" style="width:43%" id="usename-addon-1">Roll Number</span>
                             <input type="text" name="roll_number" pattern="[0-9]{9}" class="form-control" placeholder="Roll Number" aria-describedby="username-addon-1" required>
                         </div>
                         <br>
                         <div class="input-group col-xs-12 col-sm-offset-2 col-sm-8 col-md-offset-4 col-md-4">
-                            <span class="input-group-addon" id="password-addon-1">Webmail Password</span>
+                            <span class="input-group-addon" style="width:40%" id="password-addon-1">Webmail Password</span>
                             <input type="password" name="password" class="form-control" placeholder="Webmail Password" aria-describedby="password-addon-1" required>
                         </div>
                         <br>
                         <div class="input-group col-xs-12 col-sm-offset-2 col-sm-8 col-md-offset-4 col-md-4">
-                           <center> <input type="submit" class="btn btn-primary" value="login"> </center>
+                           <center> <input type="submit" class="btn btn-primary" value="Login"> </center>
                         </div>
                     </form>
                 </div>
