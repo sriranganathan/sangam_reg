@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Sangam</title>
+        <title>Sangam - Pragyan 2018</title>
         <link type="text/css" rel="stylesheet" href="{{asset('CSS/bootstrap.css')}}"  media="screen,projection"/>
         <link type="text/css" rel="stylesheet" href="{{asset('CSS/font-awesome.min.css')}}"  media="screen,projection"/>
         <link type="text/css" rel="stylesheet" href="{{asset('CSS/fileinput.css')}}"  media="screen,projection"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
         <meta name="_token" content="{{ csrf_token() }}"/>
+	<meta name="keywords" content="sangam,pragyan,pragyan 2018,pragyan,technical,competition,nit,nitt,trichy,National Institute of Technology"
+	<meta name="description" content="Pragyan '18 presents to you SANGAM, an intra-collegiate technical exhibition and competition, aimed at providing a platform for the students of NIT Trichy to transform their ideas into tangible creations and showcase their innovations to the outside world. Every spark of an idea can impact the world!"/>
         <style type="text/css">
             #content
             {
@@ -67,7 +69,7 @@
 <li class="clickable" id="rules"><a>Rules</a></li> 
 <li class="clickable" id="contact"><a>Contact</a></li> 
 
-        <li id="register"><a href="{{action('HomeController@register')}}">Register</a></li>
+       <!-- <li id="register"><a href="{{action('HomeController@register')}}">Register</a></li>-->
         @if(Session::has('user_name'))
           <li id="view"><a href="{{action('AdminController@view')}}">View Registrations</a></li>
         @endif
@@ -177,7 +179,7 @@ Additionally, for all shortlisted finalists:
 </ul>
 <h3 class="text-warning">First Round:</h3>
 <ol>
-	<li class="list_item1">The deadline for the abstract submission is <span class="text-danger" style="font-size:25px;">20<sup>th</sup> December 2017.</span> Late entries will not be entertained.</li>
+	<li class="list_item1">The deadline for the abstract submission is <span class="text-danger" style="font-size:25px;">30<sup>th</sup> December 2017.</span> Late entries will not be entertained.</li>
 	<li class="list_item1">Maximum number of participants in a team is 5.</li>
 	<li class="list_item1">A team can present more than one project.</li>
 	<li class="list_item1">One student may be a part of more than one team.</li>

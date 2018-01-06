@@ -61,7 +61,7 @@ class AdminController extends Controller
     {
         $id = $request->id;
         $registration = Registration::find($id);
-        $pathToFile = base_path() . '/Upload/' . "{$registration->file_name}";
+        $pathToFile = base_path() . '/Upload/' . "{$registration->id}.pdf";
         return response()->download($pathToFile);
 
     }

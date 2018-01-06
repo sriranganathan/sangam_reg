@@ -26,12 +26,16 @@ class HomeController extends Controller
 
     public function register()
     {
-         return view('register');
+//         return view('register');
+	    
+	    //Closing Registrations
+	    return redirect(url('/'));
     }
 
     public function store(Request $request)
     {
-        $messages = [
+
+          $messages = [
        'digits_between' => 'The :attribute must be :max digits.',
         ];
 
@@ -55,9 +59,9 @@ class HomeController extends Controller
         'contact4'      => 'required_with_all:roll4,name4,email4|integer|digits_between:10,10',
         'email4'        => 'required_with_all:roll4,name4,contact4|email',
 	'roll5'         => 'required_with_all:contact5,name5,email5|integer|digits_between:9,9',
-        'name5'         => 'required_with_all:contact5,roll4,email5|string|max:255',
-        'contact5'      => 'required_with_all:roll4,name4,email5|integer|digits_between:10,10',
-        'email5'        => 'required_with_all:roll4,name4,contact4|email',
+        'name5'         => 'required_with_all:contact5,roll5,email5|string|max:255',
+        'contact5'      => 'required_with_all:roll5,name5,email5|integer|digits_between:10,10',
+        'email5'        => 'required_with_all:roll5,name5,contact5|email',
 	
         'file'          => 'required|max:10240|mimes:pdf',
         ],$messages);
@@ -66,6 +70,9 @@ class HomeController extends Controller
         {
             return redirect(action('HomeController@register'))->withErrors($v->errors())->withInput();
         }
+		$validator->errors()->add('Unable to register');
+		return redirect(action('HomeController@store'))->withErrors($v->errors())->withInput();
+
 	try
 	{
 	DB::beginTransaction();
