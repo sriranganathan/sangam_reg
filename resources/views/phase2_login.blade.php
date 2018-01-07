@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Sangam Register</title>
+        <title>Sangam Phase 2 Register</title>
         <link type="text/css" rel="stylesheet" href="{{asset('CSS/bootstrap.css')}}"  media="screen,projection"/>
         <link type="text/css" rel="stylesheet" href="{{asset('CSS/fileinput.css')}}"  media="screen,projection"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
@@ -22,17 +22,17 @@
         </script>
     </head>
     <body>
-    @include('navbar',['active' => 'register'])
+    @include('navbar',['active'=>''])
         <div id="content" class="container">
             <div class="panel panel-primary">
-                <div class="panel-heading">Login</div>
+                <div class="panel-heading">Phase 2 Login</div>
                 <div class="panel-body">
                 @if (Session::has('message'))
                     <div class="alert alert-danger">
                         {{Session('message')}}
                     </div>
                 @endif
-                    <form method="post" action="{{action('HomeController@check_login')}}">
+                    <form method="post" action="{{action('HomeController@checkPhaseTwoLogin')}}">
                         {!! csrf_field() !!}
                         <div class="input-group col-xs-12 col-sm-offset-2 col-sm-8 col-md-offset-4 col-md-4">
                             <span class="input-group-addon" style="width:43%" id="usename-addon-1">Roll Number</span>
@@ -40,7 +40,7 @@
                         </div>
                         <br>
                         <div class="input-group col-xs-12 col-sm-offset-2 col-sm-8 col-md-offset-4 col-md-4">
-                            <span class="input-group-addon" style="width:40%" id="password-addon-1">Webmail Password</span>
+                            <span class="input-group-addon" style="width:43%" id="password-addon-1">Password</span>
                             <input type="password" name="password" class="form-control" placeholder="Webmail Password" aria-describedby="password-addon-1" required>
                         </div>
                         <br>

@@ -18,10 +18,7 @@ class UserAuth {
 		{
 			return $next($request);
 		}
-		else
-		{
-			return Redirect::to(action("HomeController@login"));
-		}
+		return redirect(url('/'));
 	}
 
 }
